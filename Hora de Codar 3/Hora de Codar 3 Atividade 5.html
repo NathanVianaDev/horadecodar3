@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar 3 Atividade 5</title>
+    <script>
+        var num1 = parseInt(prompt("Digite o valor inicial: "))
+        var num2 = parseInt(prompt("Digite o valor final: "))
+        var media = 0
+        var total = 0
+
+        if (num1<num2){
+            for (var i = num1; i <= num2; i++){
+                media = media + i
+                total ++
+            }
+            console.log(media / total)
+        }else{
+            console.log("Primeiro número precisa ser menor que o segundo!")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar 3 Atividade 11</title>
+    <script>
+        var num1 = 0
+        var dentro = 0
+        var fora = 0
+
+        for (var i = 0; i < 10; i++){
+            do {
+                num1 = parseFloat(prompt("Adicione o " + (i + 1) + "º valor: "))
+                if (isNaN(num1))
+                    alert("O valor digitado precisa ser um número!")
+                if (num1 >= 24 && num1 <= 42)
+                    dentro++
+                else 
+                    fora++
+        
+            }while (isNaN(num1))
+        }
+        
+        alert("Dos 10 valores que foram citados, " + dentro + " estão no intervalo entre 24 e 42 e " + fora + " estão fora desse intervalo.")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
